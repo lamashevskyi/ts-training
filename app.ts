@@ -4,14 +4,6 @@ import { Claculator } from './oop'
 const calculator = new Claculator();
 calculator.add(5, 8);
 
-
-
-
-
-
-
-
-
 // const array = [1, 1, 2, 5];
 // const uniqArray = _.uniq(array);
 //
