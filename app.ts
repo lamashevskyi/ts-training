@@ -1,5 +1,5 @@
 // import * as _ from 'lodash'
-import { Claculator } from './oop'
+import { Claculator } from './lec2/Calculator'
 
 const calculator = new Claculator();
 calculator.add(5, 8);

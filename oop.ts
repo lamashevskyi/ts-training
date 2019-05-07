@@ -1,12 +1,7 @@
-export class Claculator {
+const array = [5,8,9,1];
+const newArray = array.map((argument) => {
 
-    public add(a: number, b: number): number {
-        const sum = a + b;
-        this.writeToConsole(sum.toString());
-        return sum;
-    }
+    return 'calculator';
+});
 
-    private writeToConsole(text: string): void {
-        console.log(text);
-    }
-}
+console.log(newArray);
