@@ -6,8 +6,13 @@ class ChildClass extends ParentClass {
 
   async send(): Promise<any>{
     //${this.host}/api/wishlists
-    await response = super.send();
-    return response;
+    try {
+      await response = super.send();
+      return response;
+    }
+    catch(e) {
+      console.log('Error:', e);
+    }
   }
 
   puplic void printResponse(response) {
