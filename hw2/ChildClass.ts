@@ -1,21 +1,20 @@
-import * from "./ParentClass"
+import {ParentClass} from "./ParentClass";
 
-class ChildClass extends ParentClass {
+export class ChildClass extends ParentClass {
 
   private response: any;
 
   async send(): Promise<any>{
-    //${this.host}/api/wishlists
     try {
-      await response = super.send();
-      return response;
+      await this.response = super.send();
+      return this.response;
     }
     catch(e) {
       console.log('Error:', e);
     }
   }
 
-  puplic void printResponse(response) {
-    console.log(response);
-  }
+  public  printResponse(): void {
+    console.log(this.response);
+  };
 }
